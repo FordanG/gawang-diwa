@@ -1,17 +1,15 @@
 <template>
-  <div class="min-h-screen font-sans antialiased relative">
-    <div class="relative">
-      <div
+  <div class="min-h-screen flex flex-col font-sans antialiased relative">
+    <!-- <div
         class="absolute top-0 left-0 w-full h-[125vh] sm:h-[225vh] lg:h-[125vh] cover-gradient-2 sm:cover-gradient"
-      ></div>
-      <BaseNavbar />
+      ></div> -->
+    <BaseNavbar />
 
-      <main class="text-neutral-800">
-        <Nuxt />
-      </main>
+    <main class="text-neutral-800 flex-grow">
+      <Nuxt />
+    </main>
 
-      <BaseFooter />
-    </div>
+    <BaseFooter />
   </div>
 </template>
 <script>
@@ -22,13 +20,7 @@ export default {
 
 <style>
 .cover-gradient {
-  background: linear-gradient(
-    169.4deg,
-    rgba(57, 132, 244, 0.04) -6.01%,
-    rgba(12, 211, 255, 0.04) 36.87%,
-    rgba(47, 124, 240, 0.04) 78.04%,
-    rgba(14, 101, 232, 0.04) 103.77%
-  );
+  background: linear-gradient(169.4deg, #5c64510a -6.01%, #5c64510a 36.87%, #5c64510a 78.04%, #5c64510a 103.77%);
 }
 .cover-gradient-2 {
   background: linear-gradient(

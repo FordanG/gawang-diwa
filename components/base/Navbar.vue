@@ -4,18 +4,22 @@
       <div class="flex flex-col lg:flex-row items-center space-x-4 xl:space-x-8">
         <div class="w-full flex flex-row items-center justify-between py-6">
           <div>
-            <img :src="require('~/assets/img/logo/nefa.svg')" class="w-24 xl:w-28" alt="Nefa Logo" />
+            <n-link to="/">
+              <img :src="require('~/assets/img/logo/logo.png')" class="w-24 xl:w-28" alt="Gawang Diwa Logo" />
+            </n-link>
           </div>
-          <button class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+
+          <!-- <button class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
             <SegmentIcon v-if="!open" :size="24" />
             <CloseIcon v-else :size="24" />
-          </button>
+          </button> -->
         </div>
         <ul
           :class="[open ? 'flex' : 'hidden lg:flex']"
           class="w-full h-auto flex flex-col flex-grow lg:items-center pb-4 lg:pb-0 lg:justify-end lg:flex-row origin-top duration-300 xl:space-x-2 space-y-3 lg:space-y-0"
         >
-          <NavLink name="Cryptocurrency" url="#" />
+          <n-link to="/" class="font-bold text-2xl w-24 whitespace-nowrap text-header-gradient">Gawang Diwa</n-link>
+          <!-- <NavLink name="Cryptocurrency" url="#" />
           <NavLink name="Exchanges" url="#" />
           <NavLink name="Watchlist" url="#" />
           <NavLink name="NFT" url="#" />
@@ -48,17 +52,17 @@
                 </li>
               </ul>
             </transition>
-          </li>
+          </li> -->
         </ul>
       </div>
-      <div :class="[open ? 'flex' : 'hidden lg:flex']" class="space-x-3">
+      <!-- <div :class="[open ? 'flex' : 'hidden lg:flex']" class="space-x-3">
         <base-button class="px-8 xl:px-10 py-3 mt-2 bg-inherit text-gradient border border-[#0c66ee]">
           Login
         </base-button>
         <base-button class="px-8 xl:px-10 py-3 mt-2 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] text-white">
           Sign Up
         </base-button>
-      </div>
+      </div> -->
     </div>
   </nav>
 </template>
@@ -73,3 +77,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.text-header-gradient {
+  color: #5c6451;
+}
+</style>

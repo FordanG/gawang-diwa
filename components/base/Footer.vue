@@ -1,6 +1,6 @@
 <template>
   <footer class="max-w-screen-xl px-8 mx-auto">
-    <div class="w-full border-y border-[#DDDDDD]">
+    <!-- <div class="w-full border-y border-[#DDDDDD]">
       <div class="w-full flex flex-wrap space-y-6">
         <div
           class="w-full sm:w-1/2 xl:w-fit flex flex-col sm:flex-row sm:px-6 py-6 sm:py-12 sm:space-x-10 sm:border-r border-[#DDDDDD]"
@@ -61,9 +61,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="py-8 sm:py-4 text-center text-sm text-[#666666] hover:text-gray-900">
-      &copy; Copyright 2022 NEFA LLC. All rights reserved
+      &copy; Copyright 2022 Gawang Diwa. All rights reserved
     </div>
   </footer>
 </template>
